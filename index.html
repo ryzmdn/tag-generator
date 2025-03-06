@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <main>
+      <header>
+        <label for="tagInput">Create new tags</label>
+        <textarea name="tagInput" id="tagInput" autocomplete="off" spellcheck="false" oninput="generateTags(this)"></textarea>
+        <p className="mt-2 text-sm text-red-600">Separate tags with commas <kbd>,</kbd></p>
+      </header>
+      <section>
+        <div id="generate"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
